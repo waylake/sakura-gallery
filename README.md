@@ -1,30 +1,98 @@
-# React + TypeScript + Vite
+# Sakura Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Sakura Gallery Banner](background-1.png)
 
-Currently, two official plugins are available:
+Sakura Gallery is a beautiful, responsive web application that showcases cherry blossom images using the Pixabay API. With features like infinite scrolling, dark mode, and a masonry layout, it provides an immersive viewing experience for cherry blossom enthusiasts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Visit the Live Demo](https://sakura-gallery.vercel.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🌸 Infinite scrolling of cherry blossom images
+- 🌙 Dark mode toggle for comfortable viewing
+- 📱 Responsive design for all device sizes
+- 🖼️ Masonry layout for aesthetically pleasing image display
+- 🔍 Modal view for detailed image inspection
+- 🍃 Animated cherry blossom petals for an immersive experience
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Express.js (for API proxy)
+- Vercel (for deployment)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm or yarn or bun
+
+### Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/your-username/sakura-gallery.git
+   cd sakura-gallery
+   ```
+
+2. Install dependencies:
+
+   ```
+   bun install
+   ```
+
+3. Create a `.env` file in the root directory and add your Pixabay API key:
+   ```
+   PIXABAY_API_KEY=your_api_key_here
+   ```
+
+### Running the Application
+
+1. Start the development server:
+
+   ```
+   bun run dev
+   ```
+
+2. Open your browser and visit `http://localhost:5173`
+
+## Project Structure
+
+```
+sakura-gallery/
+├── api/
+│   ├── image-proxy.js
+│   └── images.js
+├── public/
+├── server/
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── hooks/
+│   ├── types/
+│   └── utils/
+├── .env
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── vercel.json
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Deployment
+
+The project is deployed on Vercel. Any push to the main branch will trigger a new deployment.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+![Cherry Blossom Background](background-2.png)
