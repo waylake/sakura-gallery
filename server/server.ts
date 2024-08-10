@@ -28,7 +28,7 @@ app.use(
 app.use(cors());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, "../../dist")));
+app.use(express.static(path.join(__dirname, "../dist")));
 
 // Proxy route for Pixabay API
 app.get("/api/images", async (req, res) => {
@@ -66,7 +66,7 @@ app.get("/api/image-proxy", async (req, res) => {
 
 // Handle React routing, return all requests to React app
 app.get("*", (_, res) => {
-  res.sendFile(path.join(__dirname, "../../dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../dist", "index.html"));
 });
 
 app.listen(PORT, () => {
