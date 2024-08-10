@@ -36,7 +36,7 @@ Sakura Gallery is a beautiful, responsive web application that showcases cherry 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/sakura-gallery.git
+   git clone https://github.com/waylake/sakura-gallery.git
    cd sakura-gallery
    ```
 
